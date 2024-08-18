@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #5ab2b2;
+}
+
+.contenedor{
+    margin: auto;
+    width: 93%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+/*ESTILOS PARA LA PARTE IZQUIERDA*/
+.izqJuego{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+p.jugador{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+p.especial{
+    font-size: 19px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    padding: 10px;
+    text-align: justify;
+}
+
+/*ESTILOS PARA LOS DADOS Y LA "MESA"*/
+.mesa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.dado{
+    height: 200px;
+    width: 200px;
+}
+
+.tirarDados{
+    margin: 5px;
+    padding: 3px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 5px #ffffff30;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.oculto{
+    display: none;
+}
+
+
+/*ESTILOS PARA EL JUEGO*/
+.juego .separado{
+    display: flex;
+}
+
+.juego .separado > div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+
+.juego .separado > .casilla {
+    border: 2px solid black;
+}
+
+/*PARA LOS JUGADORES*/
+div.jugador{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+div#azul{
+    background-color: blue;
+}
+
+div#amarillo{
+    background-color: yellow;
+}
+
+div#rojo{
+    background-color: red;
+}
+
+div#verde{
+    background-color: green;
+}
+
+
+.azul{
+    color: blue;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.amarillo{
+    color: yellow;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.rojo{
+    color: red;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.verde{
+    color: green;
+    font-weight: 900;
+    text-transform: uppercase;
+}
