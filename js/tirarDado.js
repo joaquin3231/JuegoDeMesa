@@ -20,11 +20,28 @@ tirarDados.addEventListener("click", () => {
 async function seleccionaDado(dado) {
     numSeleccionado = numRamdon(1,7);
 
-    setTimeout(() => {
-        dado.src = `img/dados/${numSeleccionado}.png`;
+    if(tirarDados.classList.contains("diablo")){
+        setTimeout(() => {
+            tirarDados.classList.remove("diablo")
 
-        moverJugador(numSeleccionado);
-    }, 1000)
+            dado.src = `img/dados/${numSeleccionado}.png`;
+    
+            randomDiablo(numSeleccionado);
+        }, 1000)
+    } else if(tirarDados.classList.contains("genio")){
+        setTimeout(() => {
+            tirarDados.classList.remove("genio")
+            dado.src = `img/dados/${numSeleccionado}.png`;
+    
+            randomGenio(numSeleccionado);
+        }, 1000)
+    } else {
+        setTimeout(() => {
+            dado.src = `img/dados/${numSeleccionado}.png`;
+    
+            moverJugador(numSeleccionado, 1);
+        }, 1000)
+    }
 }
 
 function reactivarBoton(){

@@ -13,7 +13,7 @@
         <div class="izqJuego">
             <div class="texto">
                 <p class="jugador">jugador: <span>¿blanco?</span></p>
-                <p class="especial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore corrupti corporis eligendi est illum consequuntur eaque. Ab, aliquid similique? Asperiores perferendis nobis non repellat reiciendis molestias, consequatur animi saepe nisi?</p>
+                <p class="especial"></p>
             </div>
 
             <div class="mesa">
@@ -25,7 +25,6 @@
         <div class="formJuego">
             <p>¿Cantidad de jugadores?</p>
             <select name="cantJug" id="cantJug">
-                <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
@@ -43,15 +42,15 @@
                     <div class="jugador oculto" id="verde"></div>
                 </div>
                 <div class="casilla" id="1"></div>
-                <div class="casilla" id="2"></div>
+                <div class="casilla bueno" id="2"></div>
                 <div class="casilla" id="3"></div>
-                <div class="casilla" id="4"></div>
-                <div class="casilla" id="5"></div>
+                <div class="casilla malo" id="4"></div>
+                <div class="casilla random" id="5"></div>
                 <div class="casilla" id="6"></div>
                 <div class="casilla" id="7"></div>
-                <div class="casilla" id="8"></div>
+                <div class="casilla malo" id="8"></div>
                 <div class="casilla" id="9"></div>
-                <div class="casilla" id="10"></div>
+                <div class="casilla bueno" id="10"></div>
                 <div class="casilla" id="11"></div>
             </div>
             <div class="separado">
@@ -66,20 +65,20 @@
                 <div class="blanco"></div>
                 <div class="blanco"></div>
                 <div class="blanco"></div>
-                <div class="casilla" id="12"></div>
+                <div class="casilla malo" id="12"></div>
             </div>
             <div class="separado">
-                <div class="casilla" id="24"></div>
+                <div class="casilla malo" id="24"></div>
                 <div class="casilla" id="23"></div>
                 <div class="casilla" id="22"></div>
                 <div class="casilla" id="21"></div>
-                <div class="casilla" id="20"></div>
+                <div class="casilla malo" id="20"></div>
                 <div class="casilla" id="19"></div>
                 <div class="casilla" id="18"></div>
                 <div class="casilla" id="17"></div>
-                <div class="casilla" id="16"></div>
-                <div class="casilla" id="15"></div>
-                <div class="casilla" id="14"></div>
+                <div class="casilla random" id="16"></div>
+                <div class="casilla bueno" id="15"></div>
+                <div class="casilla random" id="14"></div>
                 <div class="casilla" id="13"></div>
             </div>
             <div class="separado">
@@ -98,15 +97,15 @@
             </div>
             <div class="separado">
                 <div class="casilla" id="26"></div>
-                <div class="casilla" id="27"></div>
+                <div class="casilla bueno" id="27"></div>
                 <div class="casilla" id="28"></div>
                 <div class="casilla" id="29"></div>
-                <div class="casilla" id="30"></div>
+                <div class="casilla malo" id="30"></div>
                 <div class="casilla" id="31"></div>
                 <div class="casilla" id="32"></div>
-                <div class="casilla" id="33"></div>
+                <div class="casilla random" id="33"></div>
                 <div class="casilla" id="34"></div>
-                <div class="casilla" id="35"></div>
+                <div class="casilla random" id="35"></div>
                 <div class="casilla" id="36"></div>
                 <div class="casilla" id="37"></div>
             </div>
@@ -122,21 +121,49 @@
                 <div class="blanco"></div>
                 <div class="blanco"></div>
                 <div class="blanco"></div>
-                <div class="casilla" id="38"></div>
+                <div class="casilla bueno" id="38"></div>
             </div>
             <div class="separado">
-                <div class="casilla" id="final"></div>
+                <div class="casilla bueno" id="50"></div>
                 <div class="casilla" id="49"></div>
                 <div class="casilla" id="48"></div>
                 <div class="casilla" id="47"></div>
-                <div class="casilla" id="46"></div>
+                <div class="casilla bueno" id="46"></div>
                 <div class="casilla" id="45"></div>
                 <div class="casilla" id="44"></div>
-                <div class="casilla" id="43"></div>
+                <div class="casilla random" id="43"></div>
                 <div class="casilla" id="42"></div>
-                <div class="casilla" id="41"></div>
+                <div class="casilla malo" id="41"></div>
                 <div class="casilla" id="40"></div>
                 <div class="casilla" id="39"></div>
+            </div>
+            <div class="separado">
+                <div class="casilla random" id="51"></div>
+                <div class="blanco"></div>
+                <div class="blanco"></div>
+                <div class="blanco"></div>
+                <div class="blanco"></div>
+                <div class="blanco"></div>
+                <div class="blanco"></div>
+                <div class="blanco"></div>
+                <div class="blanco"></div>
+                <div class="blanco"></div>
+                <div class="blanco"></div>
+                <div class="blanco"></div>
+            </div>
+            <div class="separado">
+                <div class="casilla" id="52"></div>
+                <div class="casilla" id="53"></div>
+                <div class="casilla bueno" id="54"></div>
+                <div class="casilla" id="55"></div>
+                <div class="casilla" id="56"></div>
+                <div class="casilla" id="57"></div>
+                <div class="casilla malo" id="58"></div>
+                <div class="casilla" id="59"></div>
+                <div class="casilla" id="60"></div>
+                <div class="casilla" id="61"></div>
+                <div class="casilla random" id="62"></div>
+                <div class="casilla" id="final"></div>
             </div>
         </div>
     </div>
@@ -144,5 +171,7 @@
     <script src="js/tirarDado.js"></script>
     <script src="js/moverCasilla.js"></script>
     <script src="js/iniciarJuego.js"></script>
+    <script src="js/mensajes.js"></script>
+    <script src="js/casillasEspeciales.js"></script>
 </body>
 </html>

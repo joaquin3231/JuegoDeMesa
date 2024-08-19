@@ -83,6 +83,25 @@ p.especial{
     border: 2px solid black;
 }
 
+/*CASILLAS ESPECIALES*/
+.bueno{
+    background-image: url("/img/bueno.png");
+    background-position: center;
+	background-size: cover;
+}
+
+.malo{
+    background-image: url("/img/calavera.png");
+    background-position: center;
+	background-size: cover;
+}
+
+.random{
+    background-image: url("/img/alert.png");
+    background-position: center;
+	background-size: cover;
+}
+
 /*PARA LOS JUGADORES*/
 div.jugador{
     width: 50%;
@@ -105,7 +124,6 @@ div#rojo{
 div#verde{
     background-color: green;
 }
-
 
 .azul{
     color: blue;
